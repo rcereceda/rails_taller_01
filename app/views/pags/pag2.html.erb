@@ -1,2 +1,20 @@
 <h1>Pags#pag2</h1>
 <p>Find me in app/views/pags/pag2.html.erb</p>
+
+<ul>
+<% @users.each do |u| %>
+	<li><%= u %></li>
+<% end %>
+</ul>
+
+<button type="button" name="change">Cambiar fondo!</button>
+
+<%= image_tag 'ruby.png' %>
+<%= image_tag 'rails.png' %>
+
+<script>
+	$("[name=change]").click(function(e) {
+    	e.preventDefault();
+    	$.backstretch('http://dl.dropbox.com/u/515046/www/outside.jpg');
+  	});
+</script>

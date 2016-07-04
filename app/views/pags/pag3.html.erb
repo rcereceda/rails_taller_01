@@ -1,0 +1,17 @@
+<p>Página 3</p>
+
+<ul>
+<% @users.each do |u| %>
+	<li><%= u %></li>
+<% end %>
+</ul>
+
+<script>
+	var count = 0;
+	$(this).click(function(e) {
+		count++;
+		if (count >= 2) {
+    		$.backstretch('http://dl.dropbox.com/u/515046/www/outside.jpg');
+    	}
+  	});
+</script>
